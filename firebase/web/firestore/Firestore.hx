@@ -2,9 +2,9 @@ package firebase.web.firestore;
 
 import js.lib.Promise;
 import haxe.extern.EitherType;
-import firebase.app.FirebaseApp;
-import firebase.firestore.identifiers.WhereFilterOp;
-import firebase.firestore.identifiers.OrderByDirection;
+import firebase.web.app.FirebaseApp;
+import firebase.web.firestore.identifiers.WhereFilterOp;
+import firebase.web.firestore.identifiers.OrderByDirection;
 
 @:jsRequire('firebase/firestore')
 extern class Firestore {

@@ -1,6 +1,6 @@
 package firebase.web.firestore;
 
-import firebase.firestore.identifiers.TypeId;
+import firebase.web.firestore.identifiers.TypeId;
 import js.lib.Promise;
 import haxe.extern.EitherType;
 import haxe.Constraints.Function;

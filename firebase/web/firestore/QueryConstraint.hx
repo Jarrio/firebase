@@ -1,6 +1,6 @@
 package firebase.web.firestore;
 
-import firebase.firestore.identifiers.QueryConstraintType;
+import firebase.web.firestore.identifiers.QueryConstraintType;
 
 @:jsRequire('firebase/firestore')
 extern class QueryConstraint {

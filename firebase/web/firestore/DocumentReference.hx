@@ -1,6 +1,6 @@
 package firebase.web.firestore;
 
-import firebase.firestore.identifiers.TypeId;
+import firebase.web.firestore.identifiers.TypeId;
 
 /**
  * A DocumentReference refers to a document location in a Firestore database and can be used to write, read, or listen to the location. The document at the referenced location may or may not exist.

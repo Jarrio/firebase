@@ -1,7 +1,7 @@
 package firebase.web.firestore;
 
 import js.lib.Promise;
-import firebase.app.FirebaseApp;
+import firebase.web.app.FirebaseApp;
 
 /**
  * The Transaction object passed to a transaction's updateFunction provides the methods to read and write data within the transaction context. See runTransaction().
