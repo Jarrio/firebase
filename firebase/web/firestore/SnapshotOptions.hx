@@ -1,4 +1,5 @@
-package firebase.firestore;
+package firebase.web.firestore;
+
 /**
  * Options that configure how data is retrieved from a DocumentSnapshot (for example the desired behavior for server timestamps that have not yet been set to their final value).
  */

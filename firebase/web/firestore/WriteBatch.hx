@@ -1,4 +1,4 @@
-package firebase.firestore;
+package firebase.web.firestore;
 
 import js.lib.Promise;
 
@@ -9,11 +9,13 @@ extern class WriteBatch<T> {
 	 * @return Promise<Void>
 	 */
 	public function commit():Promise<Void>;
+
 	/**
-		* Deletes the document referred to by the provided DocumentReference.
-	 * @return WriteBatch
+	 * Deletes the document referred to by the provided DocumentReference.
+	 	 * @return WriteBatch
 	 */
 	public function delete(doc_ref:DocumentReference<T>):WriteBatch<T>;
+
 	/**
 	 * Writes to the document referred to by the provided DocumentReference. If the document does not exist yet, it will be created.
 	 * @param doc_ref 
@@ -21,12 +23,13 @@ extern class WriteBatch<T> {
 	 * @return WriteBatch<T>
 	 */
 	public function set(doc_ref:DocumentReference<T>, data:WithFieldValue<T>):WriteBatch<T>;
+
 	/**
 	 * Updates fields in the document referred to by the provided DocumentReference. The update will fail if applied to a document that does not exist.
 	 * @param doc_ref 
 	 * @param data 
 	 * @return WriteBatch<T>
 	 */
-	@:overload(function(doc_ref : DocumentReference<T>, field:String, value:Dynamic, ...more:Dynamic) : WriteBatch<T>{})
+	@:overload(function(doc_ref:DocumentReference<T>, field:String, value:Dynamic, ...more:Dynamic):WriteBatch<T> {})
 	public function update(doc_ref:DocumentReference<T>, data:UpdateData<T>):WriteBatch<T>;
 }

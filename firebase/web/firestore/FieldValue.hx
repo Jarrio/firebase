@@ -1,4 +1,4 @@
-package firebase.firestore;
+package firebase.web.firestore;
 
 /**
  * Sentinel values that can be used when writing document fields with set() or update().

@@ -1,4 +1,4 @@
-package firebase.firestore;
+package firebase.web.firestore;
 
 /**
  * An options object that can be passed to onSnapshot() and QuerySnapshot.docChanges() to control which types of changes to include in the result set.

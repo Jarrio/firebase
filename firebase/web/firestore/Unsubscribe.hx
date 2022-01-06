@@ -1,4 +1,4 @@
-package firebase.firestore;
+package firebase.web.firestore;
 
 @:jsRequire('firebase/firestore')
 extern class Unsubscribe {

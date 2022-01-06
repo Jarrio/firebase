@@ -1,4 +1,4 @@
-package firebase.app;
+package firebase.web.app;
 
 @:jsRequire('firebase/app')
 extern class FirebaseApp {

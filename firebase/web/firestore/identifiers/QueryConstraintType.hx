@@ -1,4 +1,4 @@
-package firebase.firestore.identifiers;
+package firebase.web.firestore.identifiers;
 
 enum abstract QueryConstraintType(String) {
 	var where;

@@ -1,4 +1,4 @@
-package firebase.firestore.identifiers;
+package firebase.web.firestore.identifiers;
 
 /**
  * Filter conditions in a Query.where() clause are specified using the strings '<', '<=', '==', '>=', '>', and 'array-contains'.

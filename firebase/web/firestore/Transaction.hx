@@ -1,4 +1,4 @@
-package firebase.firestore;
+package firebase.web.firestore;
 
 import js.lib.Promise;
 import firebase.app.FirebaseApp;
@@ -13,18 +13,21 @@ extern class Transaction<T> {
 	 * @return Promise<Transaction>
 	 */
 	public function delete(documentRef:DocumentReference<T>):Promise<Transaction<T>>;
+
 	/**
 	 * Reads the document referenced by the provided DocumentReference.
 	 * @param documentRef 
 	 * @return Promise<DocumentSnapshot<T>>
 	 */
 	public function get(documentRef:DocumentReference<T>):Promise<DocumentSnapshot<T>>;
+
 	/**
 	 * Writes to the document referred to by the provided DocumentReference. If the document does not exist yet, it will be created.
 	 * @param documentRef 
 	 * @return Transaction
 	 */
 	public function set(documentRef:DocumentReference<T>, data:WithFieldValue<T>):Transaction<T>;
+
 	/**
 	 * Writes to the document referred to by the provided DocumentReference. If the document does not exist yet, it will be created. If you provide merge or mergeFields, the provided data can be merged into an existing document.
 	 * @param documentRef 
@@ -42,5 +45,4 @@ extern class Transaction<T> {
 	 * @return Transaction
 	 */
 	public function update(documentRef:DocumentReference<T>, data:WithFieldValue<T>):Transaction<T>;
-
 }

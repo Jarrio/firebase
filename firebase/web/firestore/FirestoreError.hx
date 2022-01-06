@@ -1,4 +1,4 @@
-package firebase.firestore;
+package firebase.web.firestore;
 
 extern class FirestoreError {
 	public var code:FirestoreErrorCode;
