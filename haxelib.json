@@ -1,0 +1,9 @@
+{
+  "name": "firebase",
+  "url": "https://github.com/Jarrio/firebase",
+  "license": "MIT",
+  "description": "Use firebase from haxe js target",
+  "version": "0.0.1",
+	"releasenote": "Setup firestore externs",
+  "contributors": ["Jarrio"]
+}
