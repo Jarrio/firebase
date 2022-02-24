@@ -142,21 +142,21 @@ extern class Firestore {
 	 * @param reference 
 	 * @return Promise<DocumentReference<T>>
 	 */
-	public static function getDoc<T>(reference:DocumentReference<T>):Promise<DocumentReference<T>>;
+	public static function getDoc<T>(reference:DocumentReference<T>):Promise<DocumentSnapshot<T>>;
 
 	/**
 	 * 
 	 * @param reference 
 	 * @return Promise<DocumentReference<T>>
 	 */
-	public static function getDocFromCache<T>(reference:DocumentReference<T>):Promise<DocumentReference<T>>;
+	public static function getDocFromCache<T>(reference:DocumentReference<T>):Promise<DocumentSnapshot<T>>;
 
 	/**
 	 * 
 	 * @param reference 
 	 * @return Promise<DocumentReference<T>>
 	 */
-	public static function getDocFromServer<T>(reference:DocumentReference<T>):Promise<DocumentReference<T>>;
+	public static function getDocFromServer<T>(reference:DocumentReference<T>):Promise<DocumentSnapshot<T>>;
 
 	/**
 	 * Executes the query and returns the results as a QuerySnapshot.
