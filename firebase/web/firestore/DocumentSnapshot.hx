@@ -34,7 +34,7 @@ extern class DocumentSnapshot<T> {
 	 * Property of the DocumentSnapshot that signals whether or not the data exists. True if the document exists.
 	 * @return QueryDocumentSnapshot<T>
 	 */
-	public function exists():QueryDocumentSnapshot<T>;
+	public function exists():Bool;
 
 	/**
 	 * Retrieves the field specified by fieldPath. Returns undefined if the document or field doesn't exist.
