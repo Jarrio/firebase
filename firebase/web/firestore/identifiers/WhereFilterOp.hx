@@ -3,7 +3,7 @@ package firebase.web.firestore.identifiers;
 /**
  * Filter conditions in a Query.where() clause are specified using the strings '<', '<=', '==', '>=', '>', and 'array-contains'.
  */
-@:enum abstract WhereFilterOp(String) from String {
+enum abstract WhereFilterOp(String) from String {
 	var LESS = "<";
 	var LESS_EQUALS = "<=";
 	var GREATER = ">";
