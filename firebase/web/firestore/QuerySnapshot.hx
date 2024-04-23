@@ -34,7 +34,7 @@ extern class QuerySnapshot<T> {
 	 * @param options 
 	 * @return Array<T>
 	 */
-	public function docChanges(options:SnapshotListenOptions):Array<T>;
+	public function docChanges(?options:SnapshotListenOptions):Array<T>;
 
 	public function forEach(callback:(result:QueryDocumentSnapshot<T>) -> Void, ?this_arg:Dynamic):Void;
 }
